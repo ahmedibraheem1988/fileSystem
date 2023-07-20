@@ -1,0 +1,10 @@
+type item {
+    id: ID!
+    name: String!
+    type: String!
+    parentId: item
+}
+
+type Query {
+    recentPosts(id: ID!): item!
+}
